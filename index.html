@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header class="header-section">
+        <div class="header-left">
+            <img src="logo/2210.i305.001.F.m005.c9.realistic bread.jpg" alt="Logo" class="logo">
+            <div class="header-text">
+                <h1>The Bakers Bread</h1>
+                <div id="slogan">
+                    <p>Yummy! Tongue biting savoury bread...</p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="Orders">Order</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to The Bakers Bread</p>
+            <p>We are a bakery dedicated to providing the freshest and most delicious bread.</p>
+            <p>Our mission is to bring joy to your table with our artisanal bread.</p>
+            <p>We use only the finest ingredients and traditional baking methods.</p>
+            <p>Our bread is made with love and care, ensuring the highest quality.</p>
+            <p>Join us on this journey of flavor and freshness.</p>
+        </section>
+
+        <section id="Orders" class="order-section">
+            <h2>Place an order</h2>
+            <p>Your one-stop shop for delicious, freshly baked bread.</p>
+            <select id="bread-type" class="bread-select">
+                <option value="white">White Bread</option>
+                <option value="whole-wheat">Whole Wheat Bread</option>
+                <option value="sourdough">Sourdough Bread</option>
+                <option value="rye">Rye Bread</option>
+                <option value="multigrain">Multigrain Bread</option>
+            </select>
+            <select id="quantity" class="quantity-select">
+                <option value="1">1 Loaf</option>
+                <option value="2">2 Loaves</option>
+                <option value="3">3 Loaves</option>
+                <option value="4">4 Loaves</option>
+                <option value="5">5 Loaves</option>
+            </select>
+            <select id="delivery-option" class="delivery-select">
+                <option value="pickup">Pickup</option>
+                <option value="delivery">Delivery</option>
+            </select>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p id="summary-text">You have selected <span id="selected-bread">1</span> loaf of <span id="selected-bread-type">White Bread</span>.</p>
+                <p id="selected-delivery">Delivery Option: <span id="delivery-option-text">Pickup</span></p>
+                <p id="total-price">Total Price: $<span id="price">5.00</span></p>
+            </div>
+            <button class="order-button">Order Now</button>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <p>We offer a variety of services to meet your baking needs.</p>
+            <ul class="service-list">
+                <li>Custom Bread Orders</li>
+                <li>Bread Baking Classes</li>
+                <li>Catering Services</li>
+                <li>Special Event Bread Packages</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-content">
+        <p>&copy; 2025 The Bakers Bread. All rights reserved.</p>
+        <div class="social-media">
+            <a href="facebook.com" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <p>Follow us on social media for the latest updates and promotions!</p>
+    </footer>
+</body>
+</html>
